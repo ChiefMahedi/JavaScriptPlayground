@@ -1,1 +1,1 @@
-# This repository contains some examples programs that might be helpful to understand asynchronous javascript concept
+# This repository contains some programs that might be helpful to understand asynchronous javascript concept

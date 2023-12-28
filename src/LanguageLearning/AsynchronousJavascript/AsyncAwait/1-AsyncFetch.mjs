@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 async function fetchFacts() {
     try {
       // after this line, our function will wait for the `fetch()` call to be settled
@@ -11,7 +11,6 @@ async function fetchFacts() {
       // the `response.json()` call will either return the parsed JSON object or throw an error
       const data = await response.json();
       console.log(data.fact);
-      
     }
     catch (error) {
       console.error(`Could not get facts: ${error}`);

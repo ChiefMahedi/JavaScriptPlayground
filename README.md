@@ -1,3 +1,4 @@
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
 # JavaScriptPlayground: My JavaScript Learning Journey
 
 ## Description
@@ -18,19 +19,21 @@ npm install
 ```
 
 ## Usage
-- The `LanguageLearning/` folder contains various JavaScript code snippets and notes demonstrating different concepts.
-- The `exercises/` directory includes exercises I've completed while learning JavaScript.
+- The `./Basics` folder contains various JavaScript code snippets and notes demonstrating basic concepts like variables, functions, data types, operators, etc .
+- The `./Intermediate` folder contains various JavaScript code snippets and notes demonstrating concepts like array, class, and keyed-collections like map, and set.
+- The `./Advanced` folder contains various JavaScript code snippets and notes demonstrating concept like asynchronous programming.
 - Each subfolder might have its own README for more specific instructions.
 
 ## Folder Structure
-- `src/`
-  - `Exercises/`
-  - `LanguageLearning/`
+- `./Basics`
+- `./Intermediate`
+- `./Advanced`
 ## Learning Journey
-Throughout this journey, I've faced challenges but found resources like MDN Web Docs and JavaScript tutorials on YouTube incredibly helpful. I've gained a better grasp of asynchronous programming with promises and async/await.
+
+During this journey, I encountered various challenges. However, I found invaluable resources such as MDN Web Docs and JavaScript tutorials on YouTube, which played a crucial role in aiding my understanding. These resources significantly contributed to my improved grasp of the concepts, enabling me to effectively solve problems and advance in my learning journey.
 
 ## Contributing
-If you'd like to contribute to this repository, feel free to fork it and submit a pull request. Please follow the contribution guidelines.
+If you'd like to contribute to this repository, feel free to fork it and submit a pull request.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).

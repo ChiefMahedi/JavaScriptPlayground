@@ -2,9 +2,10 @@
 # JavaScriptPlayground: My JavaScript Learning Journey
 
 ## Description
-This repository contains code related to my journey in learning JavaScript. It includes exercises, notes, and examples as I explore different concepts in JavaScript.
 
-## Installation
+This repository houses code snippets that document my voyage through learning JavaScript. Within, you'll find exercises, notes, and examples that outline my exploration of various JavaScript concepts.
+
+## Installations
 
 ### Clone the Repository
 Clone this repository to your local machine:

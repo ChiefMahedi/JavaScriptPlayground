@@ -73,4 +73,36 @@ console.log("Total employees after concat(): ",totalEmployees);
 //join()
 const list = totalEmployees.join("*");
 console.log("Total employees after join(): ",list);
-
+//push()
+totalEmployees.push("Potato");
+console.log("Total employees after push(): ",totalEmployees);
+//pop()
+totalEmployees.pop();
+console.log("Total employees after pop(): ",totalEmployees);
+//shift()
+totalEmployees.shift();
+console.log("Total employees after shift(): ",totalEmployees);
+//unshift()
+totalEmployees.unshift('teacher1');
+console.log("Total employees after unshift(): ",totalEmployees);
+//slice()
+const sliced = totalEmployees.slice(1, 4);
+console.log("Sliced: ",sliced );
+//at()
+console.log(sliced.at(-2));
+//reverse()
+console.log('Sliced reversed',sliced.reverse());
+//sort()
+const numbers = [10,9,8,7,6,5,4,3,2,1];
+console.log("Ascending order:",numbers.sort((a,b)=>a-b));
+console.log("Descending order:",numbers.sort((a,b)=>b-a));
+//map()
+const mappedNumbers = numbers.map((number)=>{
+  return number + 10;
+})
+console.log("Mapped Numbers Array:",mappedNumbers);
+//filter()
+const evenNumbers = numbers.filter((number)=>{
+  return number%2 === 0;
+})
+console.log("Even Numbers Array:",evenNumbers);

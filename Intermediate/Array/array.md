@@ -143,13 +143,69 @@ Output:
 //concat()
 let teacher = new Array("teacher1", "teacher2", "teacher3");
 const staff = ["Mahedi", "Hassan"];
+//concat()
 const totalEmployees = teacher.concat(staff);
 console.log("Total employees after concat(): ",totalEmployees);
+//join()
 const list = totalEmployees.join("*");
 console.log("Total employees after join(): ",list);
+//push()
+totalEmployees.push("Potato");
+console.log("Total employees after push(): ",totalEmployees);
+//pop()
+totalEmployees.pop();
+console.log("Total employees after pop(): ",totalEmployees);
+//shift()
+totalEmployees.shift();
+console.log("Total employees after shift(): ",totalEmployees);
+//unshift()
+totalEmployees.unshift('teacher1');
+console.log("Total employees after unshift(): ",totalEmployees);
+//slice()
+const sliced = totalEmployees.slice(1, 4);
+console.log("Sliced: ",sliced );
+//at()
+console.log(sliced.at(-2));
+//reverse()
+console.log('Sliced reversed',sliced.reverse());
+//sort()
+const numbers = [10,9,8,7,6,5,4,3,2,1];
+console.log("Ascending order:",numbers.sort((a,b)=>a-b));
+console.log("Descending order:",numbers.sort((a,b)=>b-a));
+//map()
+const mappedNumbers = numbers.map((number)=>{
+  return number + 10;
+})
+console.log("Mapped Numbers Array:",mappedNumbers);
+//filter()
+const evenNumbers = numbers.filter((number)=>{
+  return number%2 === 0;
+})
+console.log("Even Numbers Array:",evenNumbers);
+
 ```
 Output:
 ```bash
-Total employees after concat()::  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
+Total employees after concat():  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
 Total employees after join():  teacher1*teacher2*teacher3*Mahedi*Hassan
+Total employees after push():  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan', 'Potato' ]
+Total employees after pop():  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
+Total employees after shift():  [ 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
+Total employees after unshift():  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
+Sliced:  [ 'teacher2', 'teacher3', 'Mahedi' ]
+teacher3
+Sliced reversed [ 'Mahedi', 'teacher3', 'teacher2' ]
+Ascending order: [
+  1, 2, 3, 4,  5,
+  6, 7, 8, 9, 10
+]
+Descending order: [
+  10, 9, 8, 7, 6,
+   5, 4, 3, 2, 1
+]
+Mapped Numbers Array: [
+  20, 19, 18, 17, 16,
+  15, 14, 13, 12, 11
+]
+Even Numbers Array: [ 10, 8, 6, 4, 2 ]
 ```

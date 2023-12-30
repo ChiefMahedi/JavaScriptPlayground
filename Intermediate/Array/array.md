@@ -82,10 +82,74 @@ student[3.1] = 'Chief'
 console.log(student)
 const teacher = new Array('teacher1', 'teacher2', 'teacher3');
 console.log(teacher);
+console.log("Array length of student is:", student.length);
 ```
 Output:
 ```bash
 [ 'Mahedi', 'Hassan', 'Shawon', '3.1': 'Chief' ]
 [ 'teacher1', 'teacher2', 'teacher3' ]
+Array length of student is: 3
+```
+- Here length of the student array is 3. Because,when we use non-integer indices with arrays, they are treated as properties of the array object, not as actual array elements.
+
+### Example 6: Truncating array by using the length property
+```javascript
+const staff = ['Mahedi', 'Hassan','Shawon'];
+console.log('Staff array length:',staff.length);
+console.log('Staffs :',staff);
+staff.length = 2;
+console.log('Staffs :',staff);
+```
+Output:
+```bash
+Staff array length: 3
+Staffs : [ 'Mahedi', 'Hassan', 'Shawon' ]
+Staffs : [ 'Mahedi', 'Hassan' ]
 ```
 
+### Example 7: Iterating over array
+```javascript
+let nums = [1,2,3,4,5,6,7,8,9,10];
+for(let i =0; i<nums.length; i++)
+{
+    console.log(nums[i]);
+}
+//Method 2
+nums = [1,,3,,5];
+nums.forEach(num=> {
+    console.log(num);
+});
+```
+Output:
+```bash
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1
+3
+5
+```
+- Please bear in mind that when an array is defined with omitted elements, those elements won't appear during iteration using `forEach`. However, if `undefined `is manually assigned to an element, it will be listed during iteration.
+
+### Example 8: Array methods
+```javascript
+//concat()
+let teacher = new Array("teacher1", "teacher2", "teacher3");
+const staff = ["Mahedi", "Hassan"];
+const totalEmployees = teacher.concat(staff);
+console.log("Total employees after concat(): ",totalEmployees);
+const list = totalEmployees.join("*");
+console.log("Total employees after join(): ",list);
+```
+Output:
+```bash
+Total employees after concat()::  [ 'teacher1', 'teacher2', 'teacher3', 'Mahedi', 'Hassan' ]
+Total employees after join():  teacher1*teacher2*teacher3*Mahedi*Hassan
+```

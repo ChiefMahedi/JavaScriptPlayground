@@ -36,9 +36,9 @@ Array 4: [ <10 empty items> ]
 Array 5: [ <10 empty items> ]
 Array 6: []
 ```
-- In the above code, `length` must be a `Number`.
+- In the above code, `length` must be a `Number`. 
 - Otherwise, an array with a single element (the provided value) will be created.
-- - Calling `Array(N) `results in a `RangeError`, if N is a non-whole number whose fractional portion is non-zero. 
+- Calling `Array(N) `results in a `RangeError`, if N is a non-whole number whose fractional portion is non-zero. 
 ### Example 3: Assigning array to an object as property
 ```javascript
 const  employees = {
@@ -209,3 +209,7 @@ Mapped Numbers Array: [
 ]
 Even Numbers Array: [ 10, 8, 6, 4, 2 ]
 ```
+
+## References
+
+- [MDN Web Docs - Indexed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections): Used as a reference for these notes.

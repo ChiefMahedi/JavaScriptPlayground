@@ -209,7 +209,63 @@ Mapped Numbers Array: [
 ]
 Even Numbers Array: [ 10, 8, 6, 4, 2 ]
 ```
+- `concat()`:
+  - Takes arrays and combines them into a new array.
+  - Original arrays remain unchanged.
+  - Used here to concatenate the `teacher` and `staff` arrays into a new array named `totalEmployees`.
 
+- `join()`:
+  - Combines array elements into a single string.
+  - Elements are separated by the specified delimiter.
+  - Used here to join the elements of the `totalEmployees `array with '*' as the delimiter.
+
+- `push()`:
+  - Adds one or more elements to the end of an array.
+  - Modifies the original array.
+  - Used here to add the string "Potato" to the end of the `totalEmployees` array.
+
+- `pop()`:
+  - Removes the last element from an array.
+  - Modifies the original array.
+  - Used here to remove the last element from the `totalEmployees` array.
+
+- `shift()`:
+  - Removes the first element from an array.
+  - Modifies the original array.
+  - Used here to remove the first element from the `totalEmployees` array.
+
+- `unshift()`:
+  - Adds one or more elements to the beginning of an array.
+  - Modifies the original array.
+  - Used here to add the string 'teacher1' to the beginning of the `totalEmployees` array.
+
+- `slice()`:
+  - Extracts a portion of an array into a new array.
+  - Original array remains unchanged.
+  - Used here to create a new array sliced containing elements from index 1 to index 3 (exclusive) of `totalEmployees`.
+
+- `at()`:
+  - Returns the element at a specified index in an array.
+  - Negative index values are counted from the end of the array.
+  - Used here to log the element at the second-to-last position of the sliced array.
+
+- `reverse()`:
+  - Reverses the elements of an array.
+  - Modifies the original array.
+  - Used here to reverse the elements of the sliced array.
+
+- `sort()`:
+  - Arranges the elements of an array in ascending or descending order.
+  - Modifies the original array.
+  - Used here to sort the `numbers` array in both ascending and descending orders.
+
+- `map()`:
+  - Creates a new array by applying a function to each element in an existing array.
+  - Used here to create a new array `mappedNumbers `by adding 10 to each element of the numbers array.
+
+- `filter()`:
+  - Creates a new array with elements that satisfy a given condition.
+  - Used here to create a new array `evenNumbers` containing only the even numbers from the `numbers` array.
 ## References
 
 - [MDN Web Docs - Indexed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections): Used as a reference for these notes.

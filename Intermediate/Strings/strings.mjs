@@ -13,4 +13,7 @@ const sentence = 'JavaScript is awesome';
 const index = 7;
 console.log(`The character at index ${index} is ${sentence.charAt(index)}`);
 const words = sentence.split(' ');
+console.log(words);
 console.log(words[0]);
+const slicedSentence = sentence.slice(2, 10)
+console.log(slicedSentence);

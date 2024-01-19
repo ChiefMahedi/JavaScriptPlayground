@@ -9,3 +9,8 @@ console.log(s4);
 const stringObj = new String("This is a string object"); 
 console.log(stringObj);
 console.log(typeof stringObj);
+const sentence = 'JavaScript is awesome';
+const index = 7;
+console.log(`The character at index ${index} is ${sentence.charAt(index)}`);
+const words = sentence.split(' ');
+console.log(words[0]);
